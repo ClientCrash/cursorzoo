@@ -1,0 +1,22 @@
+{
+  "name": "cursorzoo",
+  "version": "1.0.0",
+  "description": "Show the cursors of other visitors on your site.",
+  "main": "cursorzoo.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clientcrash/cursorzoo.git"
+  },
+  "keywords": [
+    "cursor",
+    "web",
+    "fun"
+  ],
+  "author": "ClientCrash",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/clientcrash/cursorzoo/issues"
+  },
+  "homepage": "https://github.com/clientcrash/cursorzoo#readme"
+}
