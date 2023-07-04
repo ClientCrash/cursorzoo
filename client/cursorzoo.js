@@ -33,6 +33,7 @@ function getCurrentCursorPosition() {
 function sendSelf(socket) {
     const pos = getCurrentCursorPosition();
     const self = { id, cursorPosition: pos };
+    if(lastStateSend.cursorPosition == undefined) lastStateSend = self;
     if (self.cursorPosition.x == lastStateSend.cursorPosition.x && self.cursorPosition.y == lastStateSend.cursorPosition.y) return;
     const payload = JSON.stringify(self);
     socket.send(payload);
