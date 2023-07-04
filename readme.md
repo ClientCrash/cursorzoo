@@ -1,5 +1,5 @@
 # Cursorzoo
-
+THIS IS A WIP
 ## How to use 
 ```javascript
 <script src="https://unpkg.com/cursorzoo@latest/cursorzoo.js"></script>
