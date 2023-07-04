@@ -2,7 +2,7 @@
 
 ## How to use 
 ```javascript
-<script src="unpkg.com/cursorzoo@latest/cursorzoo.js"></script>
+<script src="https://unpkg.com/cursorzoo@latest/cursorzoo.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         // OPTIONAL: setCursorZooImage(url);
