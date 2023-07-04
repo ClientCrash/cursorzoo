@@ -34,9 +34,12 @@ function sendSelf(socket) {
     const pos = getCurrentCursorPosition();
     const self = { id, cursorPosition: pos };
     if(lastStateSend.cursorPosition == undefined) lastStateSend = self;
+    console.log(lastStateSend.cursorPosition.x + " " + lastStateSend.cursorPosition.y + " " + self.cursorPosition.x + " " + self.cursorPosition.y);
     if (self.cursorPosition.x == lastStateSend.cursorPosition.x && self.cursorPosition.y == lastStateSend.cursorPosition.y) return;
+    console.log('Cursorzoo | Sending self to server');
     const payload = JSON.stringify(self);
     socket.send(payload);
+    lastStateSend = self;
 }
 function setCursorZooImage(url) {
     console.log('Cursorzoo | Setting image to ' + url);
